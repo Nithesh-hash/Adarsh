@@ -86,7 +86,7 @@ function Footer() {
 
               {/* Developer LinkedIn connection signature */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#9c9c9c', fontSize: '13px' }}>
-                Developed by:{' '}
+                By:{' '}
                 <a 
                   href="https://www.linkedin.com/in/nithesh-kumar-t-b4028130a/" 
                   target="_blank" 
