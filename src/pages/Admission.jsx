@@ -21,11 +21,11 @@ function Admission() {
             THE GROUPS OFFERED IN XI &amp; XII ARE AS FOLLOWS:
           </h3>
           <ul style={{ listStyleType: 'none', padding: 0, margin: 0, fontSize: '17px', color: '#990099', lineHeight: '2' }}>
-            <li style={{ marginBottom: '8px' }}>🚀 <strong>Group I :</strong> Physics, Chemistry, Biology and Mathematics</li>
-            <li style={{ marginBottom: '8px' }}>💻 <strong>Group II :</strong> Physics, Chemistry, Mathematics and Computer Science</li>
-            <li style={{ marginBottom: '8px' }}>🌿 <strong>Group III :</strong> Physics, Chemistry, Botany and Zoology</li>
-            <li style={{ marginBottom: '8px' }}>🧪 <strong>Group IV :</strong> Physics, Chemistry, Biology and Computer Science</li>
-            <li style={{ marginBottom: '8px' }}>📊 <strong>Group V :</strong> Commerce, Economics, Accountancy and Computer Science</li>
+            <li style={{ marginBottom: '8px' }}> <strong>Group I :</strong> Physics, Chemistry, Biology and Mathematics</li>
+            <li style={{ marginBottom: '8px' }}> <strong>Group II :</strong> Physics, Chemistry, Mathematics and Computer Science</li>
+            <li style={{ marginBottom: '8px' }}> <strong>Group III :</strong> Physics, Chemistry, Botany and Zoology</li>
+            <li style={{ marginBottom: '8px' }}> <strong>Group IV :</strong> Physics, Chemistry, Biology and Computer Science</li>
+            <li style={{ marginBottom: '8px' }}> <strong>Group V :</strong> Commerce, Economics, Accountancy and Computer Science</li>
           </ul>
         </div>
 
@@ -35,12 +35,12 @@ function Admission() {
             DOCUMENTS REQUIRED AT THE TIME OF ADMISSION
           </h3>
           <ul style={{ listStyleType: 'none', padding: 0, margin: 0, fontSize: '17px', color: '#990099', lineHeight: '2' }}>
-            <li style={{ marginBottom: '6px' }}>📝 Filled up Application Form</li>
-            <li style={{ marginBottom: '6px' }}>🖼️ Two copies of the child’s latest colour passport size photograph</li>
-            <li style={{ marginBottom: '6px' }}>🏫 Transfer certificate from the previous school (Original)</li>
-            <li style={{ marginBottom: '6px' }}>👶 Birth Certificate (Xerox copy)</li>
-            <li style={{ marginBottom: '6px' }}>🪪 Aadhaar (Xerox copy)</li>
-            <li style={{ marginBottom: '6px' }}>🏘️ Community Certificate (Xerox copy)</li>
+            <li style={{ marginBottom: '6px' }}> Filled up Application Form</li>
+            <li style={{ marginBottom: '6px' }}> Two copies of the child’s latest colour passport size photograph</li>
+            <li style={{ marginBottom: '6px' }}> Transfer certificate from the previous school (Original)</li>
+            <li style={{ marginBottom: '6px' }}> Birth Certificate (Xerox copy)</li>
+            <li style={{ marginBottom: '6px' }}> Aadhaar (Xerox copy)</li>
+            <li style={{ marginBottom: '6px' }}> Community Certificate (Xerox copy)</li>
           </ul>
         </div>
 
