@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nithesh-hash.github.io/Adarsh/sitemap.xml
