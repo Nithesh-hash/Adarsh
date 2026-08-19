@@ -1,0 +1,319 @@
+@import "./bootstrap.css";
+@import "./bootstrap-responsive.css";
+@import "./site.css";
+
+/* Set HTML smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Calibri, sans-serif !important;
+  background: linear-gradient(-45deg, #fcfaff, #f3ebff, #ebf5ff, #fcfaff) !important;
+  background-size: 400% 400% !important;
+  animation: gradientBG 15s ease infinite !important;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#root {
+  min-height: auto;
+  display: block;
+}
+
+/* Clear Header float/height constraints to prevent navbar overlap */
+.header {
+  background-color: #000066 !important;
+  background-image: url(/images/bg1.jpg) !important;
+  background-size: 100% 100% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: 110px !important;
+  height: 110px !important;
+  overflow: visible !important;
+  display: block !important;
+  position: relative !important;
+}
+
+.container {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  float: none !important;
+  display: block !important;
+}
+
+.box_shadow {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.04);
+  padding: 0 20px;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+/* Custom Centering Rules */
+.page_container {
+  text-align: center !important;
+}
+
+.page_container p,
+.page_container h2,
+.page_container h3,
+.page_container span,
+.page_container td,
+.page_container div {
+  text-align: center !important;
+}
+
+.page_container img {
+  margin: 15px auto !important;
+  display: inline-block !important;
+  float: none !important;
+}
+
+.page_container table {
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+/* React Router active link styling */
+.nav.sf-menu li a.active {
+  background-color: #CC3399 !important;
+  color: #FFFFFF !important;
+}
+
+.nav.sf-menu li a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* 3D Entry Animation on Scroll with transform-style preserve-3d */
+.animate-in {
+  opacity: 1; /* Keep base section container fully opacity: 1, let child elements transition */
+  transform-style: preserve-3d !important;
+  perspective: 1200px !important;
+}
+
+/* Staggered entry rules for all visible elements */
+.animate-in h1, .animate-in h2, .animate-in h3, .animate-in h4, .animate-in h5, .animate-in h6, .animate-in .title,
+.animate-in p, .animate-in span, .animate-in li, .animate-in img, .animate-in table, .animate-in tr, .animate-in td, .animate-in th,
+.animate-in input, .animate-in select, .animate-in textarea, .animate-in button,
+.animate-in a, .animate-in blockquote, .animate-in iframe,
+.animate-in .span3, .animate-in .span4, .animate-in .span6, .animate-in .post_prev {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-in h1, .animate-in h2, .animate-in h3, .animate-in h4, .animate-in h5, .animate-in h6, .animate-in .title {
+  transform: perspective(1200px) rotateX(15deg) rotateY(-8deg) translateY(45px) translateZ(-40px);
+}
+
+.animate-in p, .animate-in span, .animate-in blockquote {
+  transform: perspective(1200px) rotateX(10deg) rotateY(-5deg) translateY(40px) translateZ(-30px);
+}
+
+.animate-in img, .animate-in iframe {
+  transform: perspective(1200px) rotateX(20deg) rotateY(12deg) translateY(60px) translateZ(-80px);
+}
+
+.animate-in table {
+  transform: perspective(1200px) rotateX(12deg) translateY(50px) translateZ(-60px);
+}
+
+.animate-in tr, .animate-in td, .animate-in th {
+  transform: perspective(1200px) rotateX(8deg) translateY(20px) translateZ(-20px);
+}
+
+.animate-in li, .animate-in a, .animate-in input, .animate-in select, .animate-in textarea, .animate-in button,
+.animate-in .span3, .animate-in .span4, .animate-in .span6, .animate-in .post_prev {
+  transform: perspective(1200px) rotateX(15deg) rotateY(6deg) translateY(50px) translateZ(-50px);
+}
+
+/* Visible States */
+.animate-in.visible h1,
+.animate-in.visible h2,
+.animate-in.visible h3,
+.animate-in.visible h4,
+.animate-in.visible h5,
+.animate-in.visible h6,
+.animate-in.visible .title {
+  opacity: 1;
+  transform: perspective(1200px) rotateX(0deg) rotateY(0deg) translateY(0) translateZ(20px);
+  transition-delay: 0.05s;
+}
+
+.animate-in.visible p,
+.animate-in.visible span,
+.animate-in.visible blockquote {
+  opacity: 1;
+  transform: perspective(1200px) rotateX(0deg) rotateY(0deg) translateY(0) translateZ(10px);
+  transition-delay: 0.12s;
+}
+
+.animate-in.visible img,
+.animate-in.visible iframe {
+  opacity: 1;
+  transform: perspective(1200px) rotateX(0deg) rotateY(0deg) translateY(0) translateZ(40px);
+  transition-delay: 0.22s;
+}
+
+.animate-in.visible table {
+  opacity: 1;
+  transform: perspective(1200px) rotateX(0deg) translateY(0) translateZ(15px);
+  transition-delay: 0.28s;
+}
+
+.animate-in.visible tr,
+.animate-in.visible td,
+.animate-in.visible th {
+  opacity: 1;
+  transform: perspective(1200px) rotateX(0deg) translateY(0) translateZ(5px);
+  transition-delay: 0.32s;
+}
+
+.animate-in.visible li,
+.animate-in.visible a,
+.animate-in.visible input,
+.animate-in.visible select,
+.animate-in.visible textarea,
+.animate-in.visible button,
+.animate-in.visible .span3,
+.animate-in.visible .span4,
+.animate-in.visible .span6,
+.animate-in.visible .post_prev {
+  opacity: 1;
+  transform: perspective(1200px) rotateX(0deg) rotateY(0deg) translateY(0) translateZ(25px);
+  transition-delay: 0.26s;
+}
+
+/* 3D Dropdown folding animation */
+@keyframes dropdownEntrance {
+  0% {
+    opacity: 0;
+    transform: perspective(600px) rotateX(-20deg) translateY(-15px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg) translateY(0) scale(1);
+  }
+}
+
+.dropdown-link {
+  color: #58406f !important; /* Dark purple matching site accents */
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-family: Calibri, sans-serif;
+  display: block;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-link:hover {
+  background-color: rgba(88, 64, 111, 0.08) !important;
+  color: #cc0066 !important; /* Elegant rose highlight */
+  transform: translateX(4px);
+}
+
+/* Horizontal Top Navigation Bar Links */
+.top-nav-link {
+  display: block;
+  padding: 10px 15px;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Calibri, sans-serif;
+  white-space: nowrap;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.top-nav-link:hover {
+  background-color: #CC3399 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+/* Global Micro-Interaction Hover Animations for All Elements */
+p, span, li, .tags a, .style10 {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease !important;
+}
+
+h2, h3, h4, .title {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease, letter-spacing 0.3s ease !important;
+}
+
+img {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+table, tr, td {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease !important;
+}
+
+/* Interactive Hover Reactions (Desktop & Laptop only) */
+@media (min-width: 1024px) {
+  p:hover, .style10:hover {
+    transform: translateY(-1px);
+    color: #58406f !important;
+  }
+
+  h2:hover, h3:hover, h4:hover, .title:hover {
+    transform: scale(1.015) translateY(-2px);
+    color: #cc0066 !important;
+    letter-spacing: 0.5px;
+  }
+
+  img:hover {
+    transform: scale(1.025) translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  li:hover, .tags a:hover {
+    transform: translateY(-3px) scale(1.02);
+  }
+
+  table:hover {
+    transform: scale(1.002);
+  }
+
+  tr:hover {
+    background-color: rgba(88, 64, 111, 0.03) !important;
+  }
+
+  .footer-social-link:hover {
+    color: #CC3399 !important;
+    transform: translateY(-2px) scale(1.05);
+  }
+
+  .footer-social-link-white:hover {
+    color: #CC3399 !important;
+    transform: translateY(-2px) scale(1.05);
+  }
+}
+
+.footer-social-link, .footer-social-link-white {
+  transition: color 0.25s ease, transform 0.25s ease !important;
+}
+
+/* Global Responsive Bounds to Prevent Contained Overflows */
+img, table, iframe, pre, code {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
